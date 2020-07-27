@@ -26,3 +26,10 @@ console.log(userName);
 
 // var userName = 'Doug'; // undefined
 let userName = 'Doug';    // Uncaught ReferenceError: Cannot access 'userName' before initialization
+
+// Using var, invisible variables are created and moved to the top of the code! (Virtually)
+// After the move, the variables are initialized to "undefined". This is var HOISTING
+
+// Using let or const, invisible variables are created and moved to the top of the code! (Virtually)
+// After the move, the variables are NOT initialized. This is let/const HOISTING
+
