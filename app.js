@@ -1,5 +1,6 @@
-let name = 'Doug'; // global
-// let name = 'Aline'; // Two declarations will create a 'has already been declared error'
+var name = 'Doug';  // global
+var name = 'Aline'; // Two declarations will create a 'has already been declared error'
+                    // Redeclarations with 'var' work just fine
 
 function greet() {
     
