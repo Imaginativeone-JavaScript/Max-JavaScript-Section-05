@@ -1,4 +1,4 @@
-let name = 'Doug';
+var name = 'Doug'; // global
 
 function greet() {
     console.log(name);
