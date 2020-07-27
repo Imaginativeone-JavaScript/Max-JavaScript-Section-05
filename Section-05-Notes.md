@@ -14,3 +14,6 @@
   - Standardizations happened more here
   - Only "var" was available
 - ES2015/ES6 (and newer)
+
+## 113 var vs let and const
+- let does not really use function/global scope
