@@ -22,14 +22,11 @@
 
 // // https://blog.usejournal.com/awesome-javascript-no-more-var-working-title-999428999994
 
-console.log(userName);
+// Redeclaring a variable in the same scope
+// Declaring variables with no declaration keyword
+// Use "Strict Mode"
 
-// var userName = 'Doug'; // undefined
-let userName = 'Doug';    // Uncaught ReferenceError: Cannot access 'userName' before initialization
+"use strict";
 
-// Using var, invisible variables are created and moved to the top of the code! (Virtually)
-// After the move, the variables are initialized to "undefined". This is var HOISTING
-
-// Using let or const, invisible variables are created and moved to the top of the code! (Virtually)
-// After the move, the variables are NOT initialized. This is let/const HOISTING
-
+let userName = 'Doug'; // let was added here
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Changes_in_strict_mode
