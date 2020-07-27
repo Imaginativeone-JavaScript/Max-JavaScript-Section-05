@@ -1,7 +1,7 @@
-var name = 'Doug';  // global
+let name = 'Doug';  // global
 
 if(name === 'Doug') { // This IS a new BLOCK, but IS NOT a new FUNCTION
-    var hobbies = ['Sports', 'Cooking'];
+    let hobbies = ['Sports', 'Cooking'];
     console.log('within IF-statement', hobbies);
 }
 
@@ -16,7 +16,7 @@ function greet() {
 // accessing the 'age' variable outside of the function causes an error here - using 'let' AND 'var'
 
 console.log('outside the function', name); // this appears in the log first, then greet();
-console.log('outside of IF-statement', hobbies);
+// console.log('outside of IF-statement', hobbies);
 
 greet();
 
