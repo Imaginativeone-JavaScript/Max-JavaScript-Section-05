@@ -17,3 +17,5 @@
 
 ## 113 var vs let and const
 - let does not really use function/global scope
+
+## 114 Understanding "Hoisting"

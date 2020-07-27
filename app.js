@@ -1,6 +1,9 @@
 var name = 'Doug';  // global
-var name = 'Aline'; // Two declarations will create a 'has already been declared error'
-                    // Redeclarations with 'var' work just fine
+
+if(name === 'Doug') { // This IS a new BLOCK, but IS NOT a new FUNCTION
+    var hobbies = ['Sports', 'Cooking'];
+    console.log('within IF-statement', hobbies);
+}
 
 function greet() {
     
@@ -10,9 +13,11 @@ function greet() {
     console.log('within the function', name, age);
 }
 
-// accessing the 'age' variable outside of the function causes an error here - using 'let'
+// accessing the 'age' variable outside of the function causes an error here - using 'let' AND 'var'
 
 console.log('outside the function', name); // this appears in the log first, then greet();
+console.log('outside of IF-statement', hobbies);
+
 greet();
 
 // https://blog.usejournal.com/awesome-javascript-no-more-var-working-title-999428999994
