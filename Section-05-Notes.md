@@ -19,3 +19,4 @@
 - let does not really use function/global scope
 
 ## 114 Understanding "Hoisting"
+- Reading and Initializing Variables (var vs let/const)
