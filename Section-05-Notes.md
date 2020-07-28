@@ -37,3 +37,29 @@
     - Already compiled code is not necessarily compiled again
     - Browser APIs
       - Communication Bridges between JavaScript & Browser Logic (C++?)
+
+## 117 Inside the JavaScript Engine
+- Managing memory and managing execution steps
+- Heap and Stack
+- Heap
+  - The browser manages the Heap
+    - Taps into system memory, together with OS, memory allocation
+    - Data gets stored (long-term data)
+  - Stack
+    - Short-term memory
+    - Program flow
+    - Monitors which function is executing
+```javascript
+function getName() {
+    return prompt('Your Name: ', ''); // 2nd argument fills prompt's textbox
+}
+
+function greet() {
+
+    const userName = getName(); // Acquires value of 2nd parameter of prompt function
+    console.log('Hello ' + userName);
+
+}
+
+greet();
+```
