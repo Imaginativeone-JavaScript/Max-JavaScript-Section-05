@@ -92,3 +92,34 @@ greet();
     - Helps with asynchronous code
     - Uses Event Listeners
     - Separate from (concurrent with?) the Call Stack
+
+## 118 [DEEP DIVE] JavaScript Language vs Browser APIs
+- In the last lectures, we covered the JavaScript engine and what it does inside of the browser. You also learned that there is a difference between the JS code execution and Browser APIs you might tap into during that execution.
+
+- Essentially, you can split the code you write into these two pieces:
+
+### 1) The JavaScript Language
+- Understands core syntax (let, const etc) but does NOT know anything about the DOM for example
+
+### 2) Browser APIs
+- Not responsible for understanding your code (that's what 1) does) but instead responsible for exposing APIs like the DOM API which you can use from inside your script code.
+
+- The JavaScript language (1) is advanced by the Ecma International Technical Committee 39 (TC39), which is a group that's part of the Ecma organization. It's responsible for adding new features to the JavaScript language itself. For example, in the past, it was responsible for adding let and const.
+
+- You can learn more about TC39 here: https://tc39.es/
+
+- And you can explore the current proposals that are being discussed by that group - features that potentially make it into the core JavaScript language in the future: https://github.com/tc39/proposals
+
+- IMPORTANT: Just because a feature becomes part of the language does NOT mean that all JavaScript engines immediately support that feature. Of course the people developing the engines are doing their best to provide support as soon as possible but that process simply also takes time.
+
+- On the other hand, engine vendors also sometimes start supporting certain features BEFORE TC39 made a feature an official part of JavaScript. Because in the end, it's of course totally up to the people working on the engines to decide which syntax their JS engine understands.
+
+- Browser APIs also are standardized because the different browser vendors (Google for Chrome, Microsoft for Edge etc.) of course want to (roughly) provide feature parity and similar APIs. It wouldn't be a great developer experience if you had different functions which you need to call to make your scripts work in different browsers. Although, in the past, this was pretty normal.
+
+- Nowadays, thankfully, this is getting way better because there also is a working group that works on browser APIs - so that different features and APIs in different browsers are avoided as good as possible.
+
+- That working group has the name WHATWG and you can learn more about it here: https://whatwg.org/
+
+- If you're interested in learning more about the APIs that were/ are "managed" by this group, you can check this site: https://spec.whatwg.org/
+
+- This working group is not related to TC39!
