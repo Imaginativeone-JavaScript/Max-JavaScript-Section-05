@@ -47,8 +47,10 @@
     - Data gets stored (long-term data)
   - Stack
     - Short-term memory
-    - Program flow
-    - Monitors which function is executing
+    - Execution Context
+      - Manages Program flow
+        - Function calls and communication
+      - Monitors which function is executing
 ```javascript
 function getName() {
     return prompt('Your Name: ', ''); // 2nd argument fills prompt's textbox
@@ -84,3 +86,9 @@ greet();
     - "Registered" variables and functions
 
   - Place a breakpoint and observe the Call Stack in Chrome Tools
+  - JavaScript is single-threaded
+    - does one thing at a time
+  - The Event Loop
+    - Helps with asynchronous code
+    - Uses Event Listeners
+    - Separate from (concurrent with?) the Call Stack
