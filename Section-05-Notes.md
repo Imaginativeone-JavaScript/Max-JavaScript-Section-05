@@ -162,3 +162,15 @@ person.age = 30;
 
 // yetAnotherPerson.age = 32 and person.age = 30
 ```
+
+**An important example involving constants:**
+```javascript
+const hobbies = ['Sports'];
+
+hobbies.push('Cooking'); // does this make an error? No. It doesn't
+
+// The POINTER ADDRESS is stored in the hobbies reference variable, not the data
+// So, trying to make a new array hobbies = ['Sports', 'Cooking']; creates an error,
+// but changing the data at &hobbies is permitted
+
+```
