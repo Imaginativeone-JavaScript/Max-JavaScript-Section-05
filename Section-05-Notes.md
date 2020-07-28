@@ -173,4 +173,10 @@ hobbies.push('Cooking'); // does this make an error? No. It doesn't
 // So, trying to make a new array hobbies = ['Sports', 'Cooking']; creates an error,
 // but changing the data at &hobbies is permitted
 
+// I still can't change primitives stored in constants.
+
+// Back to objects:
+// In the example with 'person' and 'anotherPerson', **person** stores the address and can't be
+//   changed for a constant. **.age** CAN be changed...similar to what happened with the array
+//   .push() function.
 ```
