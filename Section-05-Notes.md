@@ -123,3 +123,21 @@ greet();
 - If you're interested in learning more about the APIs that were/ are "managed" by this group, you can check this site: https://spec.whatwg.org/
 
 - This working group is not related to TC39!
+
+## 119 Primitive vs Reference Values
+- Two categories of Types/Values
+  - Primitive Values, Reference Values
+  - Primitive
+    - Stored in memory (normally on The Stack)
+      - variable stores value itself
+      - relatively short-living
+      - cheap to recreate
+    - COPYING A VALUE (= assign to different variable) **copies the value**
+    - Strings
+    - Numbers
+    - Booleans
+    - null
+    - undefined
+    - Symbol
+  - Reference
+    - 
