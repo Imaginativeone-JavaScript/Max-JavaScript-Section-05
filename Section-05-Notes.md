@@ -66,7 +66,15 @@ greet();
 ### Stack Activities
 - Stack activities
   - Read this, starting from the bottom...numbered items
-  - 
+  - 08 Done with executables
+  - 07 greet() continues running
+    - once last line is executed, popped off the stack
+  - 06 getName() returns data to greet(), and is popped off the stack
+  - 05 When the user finishes with the dialog, the prompt() function is popped off the stack
+  - 04 Technically, we call the prompt() function
+    - Which I didn't write
+    - Displays the dialog
+  - 03 getName() function call
   - 02 greet() function call
     - The Stack is short-living data structure
     - Populated by pushing new function calls on to top, and popping them off when they're not required
@@ -74,3 +82,5 @@ greet();
   - 01 anonymous code execution (the script file itself)
     - JavaScript already evaluated the entire script
     - "Registered" variables and functions
+
+  - Place a breakpoint and observe the Call Stack in Chrome Tools
