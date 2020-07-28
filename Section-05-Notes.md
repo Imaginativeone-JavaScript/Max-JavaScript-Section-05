@@ -63,7 +63,7 @@ function greet() {
 
 greet();
 ```
-## Stack Activities
+### Stack Activities
 - Stack activities
   - Read this, starting from the bottom...numbered items
   - 
