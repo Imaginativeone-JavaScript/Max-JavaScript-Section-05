@@ -63,3 +63,10 @@ function greet() {
 
 greet();
 ```
+## Stack Activities
+- Stack activities
+  - Read this, starting from the bottom...numbered items
+  - 
+  - anonymous code execution (the script file itself) 01
+    - JavaScript already evaluated the entire script
+    - "Registered" variables and functions
