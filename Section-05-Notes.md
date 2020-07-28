@@ -132,7 +132,7 @@ greet();
       - variable stores value itself
       - relatively short-living
       - cheap to recreate
-    - COPYING A VALUE (= assign to different variable) **copies the value**
+    - COPYING A VALUE (= assign to different variable) **copies the value** "by value"
     - Strings
     - Numbers
     - Booleans
@@ -140,4 +140,25 @@ greet();
     - undefined
     - Symbol
   - Reference
-    - 
+    - All other objects ("more expensive to create")
+      - Stored in memory (The Heap)
+      - Variable stores a pointer (address) to location in memory (reference)
+      - Sometimes you want to make a COPY
+```javascript
+let person = {};
+person.age = 30;
+
+let anotherPerson = person;
+anotherPerson.age = 32;
+
+// person.age = 32; // person and anotherPerson point to the same reference
+
+// In order to make a copy:
+let yetAnotherPerson = { ...person };
+
+// At first, yetAnotherPerson.age = 32
+// If I change person.age to equal 30
+person.age = 30;
+
+// yetAnotherPerson.age = 32 and person.age = 30
+```
