@@ -190,3 +190,5 @@ hobbies.push('Cooking'); // does this make an error? No. It doesn't
 - V8's Garbage Collector
   - Periodically checks the Heap for unused objects (objects without references)
   - Removes unused objects
+- Beware of memory leaks
+  - I have a reference to a variable, but I nevertheless don't need it.
