@@ -67,6 +67,10 @@ greet();
 - Stack activities
   - Read this, starting from the bottom...numbered items
   - 
-  - anonymous code execution (the script file itself) 01
+  - 02 greet() function call
+    - The Stack is short-living data structure
+    - Populated by pushing new function calls on to top, and popping them off when they're not required
+    - The topmost item in the stack is the activity that's currently happening
+  - 01 anonymous code execution (the script file itself)
     - JavaScript already evaluated the entire script
     - "Registered" variables and functions
