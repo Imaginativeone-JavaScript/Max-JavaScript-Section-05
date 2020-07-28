@@ -20,3 +20,20 @@
 
 ## 114 Understanding "Hoisting"
 - Reading and Initializing Variables (var vs let/const)
+
+## 115 Strict Mode
+- 
+
+## 116
+- What does the browser do with code?
+  - Whenever the browser encounters a script, it will execute it.
+    - What does "execute the script" mean?
+    - Differs per engine
+    - PARSING and EXECUTING our code
+      - Parsing = loading the code
+      - Executing = ?
+      - Interpreter | Loads Code, Starts Execution in a non-optimized way, hands bytecode to compiler
+      - Compiler | Compiled to Machine Code, optimized, executed
+    - Already compiled code is not necessarily compiled again
+    - Browser APIs
+      - Communication Bridges between JavaScript & Browser Logic (C++?)
