@@ -1,5 +1,7 @@
 # JavaScript - The Complete Guide 2020 (Beginner + Advanced)
 
+## Section 05: Behind the Scenes & The (Weird) Past (ES3, ES5) & Present (ES6+) of JavaScript
+
 ## 111 Module Introduction
 - Behind the Scenes of JavaScript
 - How It Works, the Weird Parts & ES5 vs ES6+
@@ -180,3 +182,11 @@ hobbies.push('Cooking'); // does this make an error? No. It doesn't
 //   changed for a constant. **.age** CAN be changed...similar to what happened with the array
 //   .push() function.
 ```
+
+## 120 Garbage Collection and Memory Management
+- How is the Heap Managed?
+- The OS allocates only a certain amount of memory to Chrome
+  - If that would be exceeded, that would kill Chrome
+- V8's Garbage Collector
+  - Periodically checks the Heap for unused objects (objects without references)
+  - Removes unused objects
